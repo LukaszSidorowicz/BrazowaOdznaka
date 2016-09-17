@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lukasz.brazawaodznaka">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.lukasz.brazowaodznaka.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.lukasz.brazowaodznaka.WyswietlanieBazy" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.WyswietlaniePytan" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.CechyUzytkowe" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Skoki" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Pielegnacja" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.PodstawyJazdyKonne" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.PodstawyZachowaniaNaUjezdzalni" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Siodlanie" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Sprzet" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Main2Activity" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Stajnia" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.TeoriaKlasJazdKonnej" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Wyprowadzanie" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.ZdrowieKoni" />
+        <activity android:name="com.example.lukasz.brazowaodznaka.Zywienie"></activity>
+    </application>
+
+</manifest>
