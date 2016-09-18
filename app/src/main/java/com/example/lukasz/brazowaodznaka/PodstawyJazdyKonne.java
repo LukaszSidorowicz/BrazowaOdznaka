@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.lukasz.brazawaodznaka.R;
 
+import java.io.IOException;
 import java.util.List;
 
 public class PodstawyJazdyKonne extends AppCompatActivity {
@@ -28,6 +29,16 @@ public class PodstawyJazdyKonne extends AppCompatActivity {
         text = (TextView) findViewById(R.id.text1);
         poprzed = (Button) findViewById(R.id.poprzednie);
         nast = (Button) findViewById(R.id.nastepne);
+
+
+        try {
+            myDbHelper.createDataBase();
+        } catch (IOException ioe) {
+            throw new Error("Niepowodzenie tworzenia bazy");
+        }
+
+
+
         try {
             myDbHelper.openDataBase();
         } catch (SQLException sqle) {
